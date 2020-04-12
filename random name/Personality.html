@@ -1,0 +1,40 @@
+<html>
+    <head>
+    <style>
+     div {
+	border: 1px solid black;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-right: 150px;
+	margin-left: 80px;
+	background-color: lightblue;
+           }
+</style>
+      <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript">
+             var array = ["Kim Seokjin",
+  "Kim Taehyung",
+  "Kim Namjoon",
+  "Jawaharlal Nehru.",
+  ".",
+  "Emma Hathaway",
+  "Min Yoongi",
+  "Park Jimin",
+  "Jung Hoseok",
+  "Jeon Jungkook",
+  "Brad Pitt",
+  "Ariana Grande",
+  "Ryan Reynolds",
+  "Park Seojun"];
+                function getRandomText() {
+                    var num = Math.floor( Math.random() * array.length );
+                    document.getElementById("text").innerHTML=array[num];
+                }
+        </script>
+    </head>
+<body><div><em>
+    <button onclick="getRandomText()">Random Name</button>
+    <p id="text"></p></em>
+
+</body>
+</html>
